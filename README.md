@@ -19,9 +19,7 @@ Flow tham khảo: [A successful Git branching model](http://nvie.com/posts/a-suc
         2. Trong trường hợp pull-request có 2 commit thì nội dung commit title của 2 commit sẽ tương ứng như sau
             * `Tạo method thực hiện việc clear cache trong Model`
             * `Tại controller gọi method ở Model để thực hiện việc clear cache`
-* Gitflow đến thời điểm 2018/03/28 có quy định là 1 pull-request chỉ một commit sẽ không còn hiệu lực nữa. Tuy nhiên với các dự án mà teamsize lớn hơn 10 người thì để nhằm mục đích cho thuận tiện cho việc confirm thì khuyến khích dùng squash and merge .
-* Ngoài ra thì với gitflow trước đây ( trước thời điểm 2018/03/28) thì có cho phép dùng force push, tuy nhiên do khi sử dụng force push sẽ xoá hết lịch sử thay đổi do vậy gitlow hiện tại không khuyến khích sử dụng force push. Trong trường hợp cần sử dụng force push thì cần có sự đồng thuận từ team.
-* Tại môi trường local(trên máy lập trình viên), tuyệt đối không được thay đổi code khi ở branch master.Nhất định phải thao tác trên branch khởi tạo để làm task.
+* Tại môi trường local(trên máy lập trình viên), tuyệt đối không được thay đổi code khi ở branch master. Nhất định phải thao tác trên branch khởi tạo để làm task.
 
 ### Chuẩn bị
 
@@ -133,7 +131,7 @@ Từ đây, Central Repository và Forked Repository sẽ được gọi lần l
     9.3 Tiếp tục gửi lại URL cho reviewer trên chatwork để tiến hành việc review code.
 
 10. Nếu trên 2 người reviewer đồng ý với pull-request, người reviewer cuối cùng sẽ thực hiện việc merge pull-request.
-    Revewer xác nhận sự đồng ý bằng comment LGTM.
+    Revewer xác nhận sự đồng ý bằng comment OK.
 
 11. Quay trở lại 1.
 
